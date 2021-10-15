@@ -84,7 +84,8 @@ body{
     width: 119px;
     top: 14px;
     height: 119px;
-    background-image: url(../img/Logo.png);
+    background-image: url(https://raw.githubusercontent.com/thewebmembers/editabeauty.github.io/master/img/Logo.png);
+/*     ../img/Logo.png */
     background-size: cover;
     border-radius: 50%;
 }
