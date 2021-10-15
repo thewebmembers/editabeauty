@@ -452,6 +452,7 @@ footer{
 .f_all span{
     color: #ad4482;
     font-size: 25px;
+    margin-bottom:25px;
 }
 /* End Footer */
 .fa, .fas{
