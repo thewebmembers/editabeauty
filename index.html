@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/8a9be494f1.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <title>Beauty</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar animate__fadeInDown animate__animated wow">
+                <div class="content">
+                <div class="logo">
+                    <a href="#">
+                        <div class="l_circle">
+                            <div class="l_logo">
+                                
+                            </div>
+                            <div class="l_text">
+                                <p>Beauty Salon - Edita Fashion - BSEF - BSEF -</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <ul class="menu-list" >
+                    <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                </div>
+            </nav>
+            
+            <script>
+                // Header Logo Animated
+                    const text = document.querySelector('.l_text p');
+                    text.innerHTML = text.innerText.split("").map(
+                        (char, i) =>
+                        `<span style="transform:rotate(${i * 8.2}deg);">${char}</span>`
+                    ).join("")
+                // End Header Logo Animated
+            </script>
+            <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = ()=>{
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+            </script>
+    </header>
+    <section class="main">
+        <div class="wrapper" id="home">
+            <div class="wr_soc">
+                <div class="f_soc">
+                    <a href="https://www.instagram.com/" class="animate__fadeInRight animate__animated wow">
+                        <i class="fab fa-instagram instagram"></i>
+                    </a>
+                    <a href="mailto:contact.web.members@mail.ru" class="animate__fadeInRight animate__animated wow">
+                        <i class="fas fa-envelope envelope"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="animate__fadeInRight animate__animated wow">
+                        <i class="fab fa-facebook-f facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="animate__fadeInRight animate__animated wow">
+                        <i class="fab fa-twitter twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="wr__img">
+                <img src="https://images.pexels.com/photos/324657/pexels-photo-324657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <span class="wr_span animate__fadeInUpBig animate__animated wow">Welcome To Edita's Beauty Salon</span>
+        </div>
+        <div class="services-section" id="services">
+            <div class="inner-width">
+              <h1 class="section-title animate__fadeInUp animate__animated wow">Our Services</h1>
+              <div class="border animate__fadeInUp animate__animated wow"></div>
+              <div class="services-container">
+      
+                <div class="service-box animate__fadeInUp animate__animated wow">
+                  <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                  </div>
+                  <div class="service-title">Web Designs</div>
+                  <div class="service-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                  </div>
+                </div>
+      
+                <div class="service-box animate__fadeInUp animate__animated wow">
+                  <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="service-title">Web Development</div>
+                  <div class="service-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                  </div>
+                </div>
+      
+                <div class="service-box animate__fadeInUp animate__animated wow">
+                  <div class="service-icon">
+                    <i class="fas fa-brush"></i>
+                  </div>
+                  <div class="service-title">Responsive Designs</div>
+                  <div class="service-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                  </div>
+                </div>
+      
+                <div class="service-box animate__fadeInUp animate__animated wow">
+                  <div class="service-icon">
+                    <i class="fas fa-object-ungroup"></i>
+                  </div>
+                  <div class="service-title">Edit Sections</div>
+                  <div class="service-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                  </div>
+                </div>
+      
+                <div class="service-box animate__fadeInUp animate__animated wow">
+                  <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <div class="service-title">Databases</div>
+                  <div class="service-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                  </div>
+                </div>
+      
+                <div class="service-box animate__fadeInUp animate__animated wow">
+                  <div class="service-icon">
+                    <i class="fab fa-android"></i>
+                  </div>
+                  <div class="service-title">Android</div>
+                  <div class="service-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="our_staf">
+            <div class="os_span" class="animate__fadeInUp animate__animated wow">
+                <span class="animate__fadeInUp animate__animated wow">Our Employees</span>
+                <p class="animate__fadeInUp animate__animated wow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum dolore deserunt inventore alias ea debitis qui nostrum fugit tempore.</p>
+            </div>
+            <div class="our_staf_slider animate__fadeInUp animate__animated wow">
+                <div class="os_1 animate__fadeInUp animate__animated wow">
+                    <img src="img/wm_1.jpg">
+                    <div class="os_soc">
+                        <a href="https://www.instagram.com/" class="animate__fadeInUp animate__animated wow">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" class="animate__fadeInUp animate__animated wow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="animate__fadeInUp animate__animated wow">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </div>
+                    <div class="os_p">
+                        <span>John Smith</span>
+                        <p>Make Up Artsist</p>
+                    </div>
+                </div>
+                <div class="os_1 animate__fadeInUp animate__animated wow">
+                    <img src="img/wm_2.jpg!d">
+                    <div class="os_soc">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </div>
+                    <div class="os_p">
+                        <span>John Smith</span>
+                        <p>Make Up Artsist</p>
+                    </div>
+                </div>
+                <div class="os_1 animate__fadeInUp animate__animated wow">
+                    <img src="img/wm_3_3.jfif">
+                    <div class="os_soc">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </div>
+                    <div class="os_p">
+                        <span>John Smith</span>
+                        <p>Make Up Artsist</p>
+                    </div>
+                </div>
+                <div class="os_1 animate__fadeInUp animate__animated wow">
+                    <img src="img/wm_4.jpg!d.jpg">
+                    <div class="os_soc">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </div>
+                    <div class="os_p">
+                        <span>John Smith</span>
+                        <p>Make Up Artsist</p>
+                    </div>
+                </div>
+                <div class="os_1 animate__fadeInUp animate__animated wow">
+                    <img src="img/wm_5.jpg">
+                    <div class="os_soc">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </div>
+                    <div class="os_p">
+                        <span>John Smith</span>
+                        <p>Make Up Artsist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_main" id="about">
+            <div class="about-section animate__fadeInUp animate__animated wow">
+                <div class="inner-container animate__fadeInUp animate__animated wow">
+                    <h1 class="animate__fadeInUp animate__animated wow">About Us</h1>
+                    <p class="text animate__fadeInUp animate__animated wow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+                    </p>
+                    <div class="skills">
+                        <span class="animate__fadeInUp animate__animated wow">Web Design</span>
+                        <span class="animate__fadeInUp animate__animated wow">Photoshop & Illustrator</span>
+                        <span class="animate__fadeInUp animate__animated wow">Coding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="f_map_and_cont">
+                <div class="f_map animate__fadeInUp animate__animated wow" id="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.55761009111!2d23.703319971790542!3d37.990899653151864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2z0JDRhNC40L3Riywg0JPRgNC10YbQuNGP!5e0!3m2!1sru!2s!4v1633528320755!5m2!1sru!2s" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            <div class="f_main">
+                <div class="f_contact" id="contact">
+                    <span class="f_contact_span animate__fadeInUp animate__animated wow">Contact Us</span>
+                    <div class="f_contact_span_p animate__fadeInUp animate__animated wow">
+                        <p class="animate__fadeInUp animate__animated wow">Phone: <span class="animate__fadeInUp animate__animated wow">(+374)-916-125</span></p>
+                        <p class="animate__fadeInUp animate__animated wow">Email:  <span class="animate__fadeInUp animate__animated wow">email@email.com</span></p>
+                        <p class="animate__fadeInUp animate__animated wow">Adrres: <span class="animate__fadeInUp animate__animated wow">123 W Street</span></p>
+                        <p class="animate__fadeInUp animate__animated wow">City: <span class="animate__fadeInUp animate__animated wow">Athens</span></p>
+                    </div>
+                </div>
+                <div class="f_hour">
+                    <span class="f_hour_span animate__fadeInUp animate__animated wow">Hours and Days</span>
+                    <div class="f_hour_span_p animate__fadeInUp animate__animated wow">
+                        <p class="animate__fadeInUp animate__animated wow">Mon - Fri: <span class="animate__fadeInUp animate__animated wow">9am - 5pm</span></p>
+                        <p class="animate__fadeInUp animate__animated wow">Sat & San: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="f_soc_main">
+            <div class="f_soc">
+                <a href="https://www.instagram.com/" class="animate__fadeInUp animate__animated wow">
+                    <i  class="fab fa-instagram animate__fadeInUp animate__animated wow"></i>
+                </a>
+                <a href="mailto:contact.web.members@mail.ru" class="animate__fadeInUp animate__animated wow">
+                    <i class="fas fa-envelope animate__fadeInUp animate__animated wow"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="animate__fadeInUp animate__animated wow">
+                    <i class="fab fa-facebook-f animate__fadeInUp animate__animated wow"></i>
+                </a>
+                <a href="https://twitter.com/" class="animate__fadeInUp animate__animated wow">
+                    <i class="fab fa-twitter animate__fadeInUp animate__animated wow"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="f_all">
+            <span class="animate__flipInX animate__animated wow">&copy; 2021 All rights reserved</span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
