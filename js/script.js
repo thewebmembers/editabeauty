@@ -1,7 +1,7 @@
 $('.our_staf_slider').slick({
     infinite: true,
     dots: true,
-    speed: 3000,
+    speed: 1500,
     arrows: false,
     autoplay: true, 
     slidesToShow: 3,
